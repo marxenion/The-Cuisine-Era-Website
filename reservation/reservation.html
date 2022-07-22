@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Reservation | The Cuisine Era</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=-1.0">
+        <link rel="icon" href="../img/The Cuisine Era-modified.png" type="image/x-icon">
+        <link rel="stylesheet" href="reservation.css" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>      
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <!--Navigation-->
+        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: orangered;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img id="nav-logo" src="../img/The Cuisine Era-modified.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../menu/menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../reservation/reservation.html">Reservation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../index.html#about-headline">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../sign-up/sign-up.html">Sign-up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Log-in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <!--Modal-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="login" style="text-align: center;">Log-in</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    <!--Modal-output-->
+                <div class="modal-body">
+                  <form>
+    <!--Modal-output-Email-->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example1">Email address</label>
+                      <input type="email" id="form2Example1" class="form-control" placeholder="Email/Phone number" />
+                    </div>
+    <!--Modal-output-Password-->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example2">Password</label>
+                      <input type="password" id="form2Example2" class="form-control" placeholder="Password" />
+                      <a style="text-decoration: none" href="#!">Forgot password?</a>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+                        <label class="form-check-label" for="form2Example34"> Remember my account </label>
+                      </div>
+                    </div>
+    <!--Modal output-Third-party log-in-->
+                    <div class="text-center">
+                      <p>Not a member? <a href="#!" style="text-decoration: none">Create an account</a></p>
+                      <p>or log-in with:</p>
+                      <button type="button" class="btn btn-outline-light btn-floating mx-1 shadow p-2 mb-1 bg-body rounded text-dark">
+                        <img style="border-radius: 10px; margin-right: 5px;" src="../img/facebook.png"/>Facebook
+                      </button>
+                      <button type="button" class="btn btn-outline-light btn-floating mx-1 shadow p-2 mb-1 bg-body rounded text-dark">
+                        <img style="border-radius: 10px; margin-right: 5px;" src="../img/instagram.png">Instagram
+                      </button>
+                      <button type="button" class="btn btn-outline-light btn-floating mx-1 shadow p-2 mb-1 bg-body rounded text-dark">
+                        <img style="border-radius: 10px; margin-right: 5px;" src="../img/twitter.png"/>Twitter
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Log In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!--Breadcrumb-->
+          <nav class="nav" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a id="breadcrumb-link" href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Reservation</li>
+            </ol>
+          </nav>
+          
+    <!--Schedule-->
+            <div class="schdl-loc">
+              <div class="schdl-map-ctr">
+                <div class="schdl-ctr">
+                  <h1 id="schdl-cptn">Restaurant Schedule</h1>
+                  <table class="schdl-tbl">
+                    <tr>
+                      <td class="weekdays">Weekdays</td>
+                      <td class="weekdays">9:00 AM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td class="weekends">Weekends</td>
+                      <td class="weekends">7:00 AM - 10:00 PM</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="map-ctr">
+                  <h1 id="map-cptn">Find us here</h1>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7729.126865406975!2d120.8458451236267!3d14.394652359735476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962c89d0747ef7%3A0xa308cfe0808aeff4!2sDaang%20Amaya%20II%2C%20Tanza%2C%20Cavite!5e0!3m2!1sen!2sph!4v1658206430524!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+          </div>
+          
+
+        <!--Reservation-->
+        <div class="rsve-form m-auto p-5 m-5">
+          <h1>Reserve Table Form</h1>
+          <p>Please fill the form below accurately to enable us serve you better.</p>
+          <form class="row g-3">
+              <!--Customer Basic Info-->
+              <!--Name-->
+              <div class="col-md-6">
+                <label for="inputFirstname" class="form-label">First Name</label>
+                <input type="email" class="form-control" id="inputFirstName" placeholder="Enter your first name">
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastname" class="form-label">Last Name</label>
+                <input type="email" class="form-control" id="inputLastName" placeholder="Enter your last name">
+              </div>
+              <!--Gender-->
+              <label for="Gender" class="form-label">Gender</label>
+              <div style="display: block;"  class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Female
+                </label>
+              </div>
+              <!--Email-->
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your e-mail address">
+              </div>
+              <!--Address-->
+              <div class="col-3">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Enter your current address">
+              </div>
+              <div class="col-md-3">
+                <label for="inputBarangay" class="form-label">Barangay</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Enter your Barangay">
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputCity" class="form-label">City/Municipality</label>
+                <select id="inputCity" class="form-select">
+                  <option selected>Choose here</option>
+                  <option>Cavite City</option>
+                  <option>Kawit</option>
+                  <option>Noveleta</option>
+                  <option>Rosario</option>
+                  <option>Bacoor</option>
+                  <option>Imus</option>
+                  <option>Dasmarinas</option>
+                  <option>Carmona</option>
+                  <option>Silang</option>
+                  <option>GMA</option>
+                  <option>General Trias</option>
+                  <option>Amadeo</option>
+                  <option>Indang</option>
+                  <option>Tanza</option>
+                  <option>Trece Martires City</option>
+                  <option>Tagaytay City</option>
+                  <option>Alfonso</option>
+                  <option>Gen. Emilio Aguinaldo</option>
+                  <option>Magallanes</option>
+                  <option>Maragondon</option>
+                  <option>Mendez</option>
+                  <option>Naic</option>
+                  <option>Ternate</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputState" class="form-label">Province</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose here</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-1">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="ZIP">
+              </div>
+              <!--Reservation details-->
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Number of guest/s invited</label>
+                <input type="text" class="form-control" id="inputguests" placeholder="Enter number of guest/s">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Date of reservation</label>
+                <input type="datetime-local" id="birthday" name="birthday">
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Reservation Type</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose here</option>
+                  <option>Dinner</option>
+                  <option>VIP/Mezzanine</option>
+                  <option>Birthday/Anniversary</option>
+                  <option>Nightlife</option>
+                  <option>Private</option>
+                  <option>Wedding</option>
+                  <option>Corporate</option>
+                  <option>Holiday</option>
+                  <option>Other (Enter in Note)</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="exampleFormControlTextarea1">Note</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Please specify your other reservation type and/or your special request/s"></textarea>
+              </div>
+<!--Credit Card-->
+              <h1>Credit Card Authorization Form</h1>
+              <label for="Card" class="form-label">Type of Card</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <img src="../img/visa.png" alt="Visa" style="width:100px;">
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <img src="../img/mastercard.png" alt="mastercard" style="width:80px; height: 50px;">
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <img src="../img/discover.png" alt="discover" style="width:80px; height: 50px;">
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <img src="../img/gcash.png" alt="gcash" style="width:120px; height: 50px;">
+                </label>
+              </div>
+              <div class="col-md-12">
+                <label for="inputcardholdername" class="form-label">Cardholder Name</label>
+                <input type="email" class="form-control" id="inputFirstName" placeholder="Enter your cardholder name">
+              </div>
+              <div class="col-md-4">
+                <label for="inputcardholdername" class="form-label">Card Number</label>
+                <input type="email" class="form-control" id="inputFirstName" placeholder="Enter your cardnumber">
+              </div>
+              <div class="col-md-4">
+                <label for="inputcardholdername" class="form-label">Cardholder Name</label>
+                <input type="email" class="form-control" id="inputFirstName" placeholder="Enter your cardholder name">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Date of reservation</label>
+                <input type="date" id="expdate" name="expdate">
+                </select>
+              </div>
+              <p>By clicking Submit Reservation, you are agreeing to the <a href="../agreement/agreement.html" class="tccp">Terms and Conditions</a>, <a href="../agreement/agreement.html" class="tccp">Customer Policy</a>, and the authorization of your credit card with your consent of The Cuisine Era restaurant.</p>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit">Submit Reservation</button>
+              </div>
+            </form>
+<!-- Modal -->
+              <div class="modal fade" id="submit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Successful!</h5>
+                    </div>
+                    <div class="modal-body">
+                      Reservation submitted. You may visit your email for further information about your reservation. Thank you very much for your patronage! 😊
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+
+<!--Footer-->
+<div class="item4">
+  <!--Customer Support-->
+          <section class="customer">
+            <h4 id="customer-title">Our Brand</h4>
+            <ul>
+              <li class="customer-list"><a class="customer-txt" href="../index.html#about-headline">About Us</a></li>
+              <li class="customer-list"><a class="customer-txt" href="../customer support/customer support.html">Customer Support</a></li>
+              <li class="customer-list"><a class="customer-txt" href="../agreement/agreement.html">Customer Policy</a></li>
+              <li class="customer-list"><a class="customer-txt" href="../agreement/agreement.html">Terms and Condition</a></li>
+            </ul>
+          </section>
+  <!--Menu-footer-->
+          <section class="menufoot">
+            <h3 id="menufoot-title">Our Brand</h3>
+            <ul>
+              <li class="menufoot-list"><a class="menufoot-txt" href="../index.html">Home</a></li>
+              <li class="menufoot-list"><a class="menufoot-txt" href="../menu/menu.html">Menu</a></li>
+              <li class="menufoot-list"><a class="menufoot-txt" href="../reservation/reservation.html">Reservation</a></li>
+              <li class="menufoot-list"><a class="menufoot-txt" href="../index.html#about-headline">About</a></li>
+            </ul>
+          </section>
+  <!--Logo footer-->
+          <section class="logofoot">
+            <img id="logofoot-img" src="../img/The Cuisine Era-modified.png">
+          </section>
+  <!--Social-->
+          <section class="social">
+            <h4 id="social-title">Keep in touch with us!</h4>
+            <table>
+              <tr>
+                <td><img class="social-img" src="../img/facebook.png" alt="Facebook" style="border-radius: 50px;"></td>
+                <td><a class="social-txt" href="https://www.facebook.com/The-Cuisine-Era-101098829361909" target="_blank">Facebook</a></td>
+              </tr>
+              <tr>
+                <td><img class="social-img" src="../img/instagram.png" alt="Instagram"></td>
+                <td><a class="social-txt" href="https://www.instagram.com" target="_blank">Instagram</a></td>
+              </tr>
+              <tr>
+                <td><img class="social-img" src="../img/twitter.png" alt="Twitter"></td>
+                <td><a class="social-txt" href="https://www.twitter.com" target="_blank">Twitter</a></td>
+              </tr>
+              <tr>
+                <td><img class="social-img" src="../img/youtube.png" alt="Youtube" style="width: 40px;"></td>
+                <td><a class="social-txt" href="https://www.youtube.com" target="_blank">Youtube</a></td>
+              </tr>
+            </table>
+          </section>
+  <!--Contacts-->
+          <section class="contacts">
+            <h4 id="contacts-title">Contact Information</h4>
+            <ul>
+              <li class="contacts-list">Email:<br><a class="contacts-txt" href="mailto:legaspimarknixon@thecuisine-era.com">legaspimarknixon@thecuisine-era.com</a></li>
+              <li class="contacts-list">Phone:<br><a class="contacts-txt" href="tel:(+639)0927368348">(+639)0927368348</a></li>
+            </ul>
+          </section>
+        </div>
+  <!--Copyright-->
+        <p id="copyright">&#169; 2022 The Cuisine Era by Mark Nixon Legaspi. All Rights Reserved.</p>
+
+  </body>
+</html>
+
+
+
+            
+
+
+            

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>The Cuisine Era by Mark Nixon Legaspi</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=-1.0">
+		<link rel="stylesheet" href="index.css" type="text/css">
+		<link rel="icon" href="img/The Cuisine Era-modified.png" type="icon/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>      
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div class="grid-container">
+		
+<!--Header-->
+			<div class="item1">
+<!--Navigation-->
+			<ul class="tab">
+				<li><img id="nav-logo" src="img/The Cuisine Era-modified.png" alt="logo"/></li>
+				<li><a class="lefttab" href="index.html">Home</a></li>
+				<li><a class="lefttab" href="menu/menu.html">Menu</a></li>
+				<li><a class="lefttab" href="reservation/reservation.html">Reservation</a></li>
+				<li><a class="lefttab" href="#about-headline">About</a></li>
+				<li><a id="righttab" href="sign-up/sign-up.html">Sign Up</a></li>
+				<li><a id="righttab" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Log In</a></li>
+			</ul>
+<!--First Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="login" style="text-align: center;">Log-in</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+<!--Log-in Modal-->
+						<div class="modal-body">
+							<form>
+<!-- Email input -->
+								<div class="form-outline mb-4">
+									<label class="form-label" for="form2Example1">Email address</label>
+									<input type="email" id="form2Example1" class="form-control" placeholder="Email/Phone number" />
+								</div>
+<!-- Password input -->
+								<div class="form-outline mb-4">
+									<label class="form-label" for="form2Example2">Password</label>
+									<input type="password" id="form2Example2" class="form-control" placeholder="Password" />
+									<a style="text-decoration: none" href="#!">Forgot password?</a>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+										<label class="form-check-label" for="form2Example34"> Remember my account </label>
+									</div>
+								</div>
+<!--Third-party-log-in-->
+								<div class="text-center">
+									<p>Not a member? <a href="#!" style="text-decoration: none">Create an account</a></p>
+									<p>or log-in with:</p>
+									<button type="button" class="btn btn-outline-light btn-floating mx-1 shadow p-2 mb-1 bg-body rounded text-dark">
+										<img class="modal-social" style="border-radius: 10px; margin-right: 5px;" src="img/facebook.png"/>Facebook
+									</button>
+									<button type="button" class="btn btn-outline-light btn-floating mx-1 shadow p-2 mb-1 bg-body rounded text-dark">
+										<img class="modal-social" style="border-radius: 10px; margin-right: 5px;" src="img/instagram.png">Instagram
+									</button>
+									<button type="button" class="btn btn-outline-light btn-floating mx-1 shadow p-2 mb-1 bg-body rounded text-dark">
+										<img class="modal-social" style="border-radius: 10px; margin-right: 5px;" src="img/twitter.png"/>Twitter
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Log In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--Log in clicked Modal-->
+			<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Log-in successfully! Please close this window.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+					</div>
+				</div>
+			</div>
+	<!--Banner-->
+			<div class="fade-in-image">
+				<img id="banner-logo" src="img/The Cuisine Era-modified.png" alt="banner-logo"/>
+			</div>		
+		</div>
+
+	<!--Divider-->
+			<div class="item2">
+<!--Welcome--->
+			<div class="welcome-headline">
+				<h1 id="welcome-title"><marquee width="100%" direction="right" height="auto">Kumusta. Hello. 안녕하세요. Nǐn hǎo. Ciao. Hola. Bonjour. </marquee></h1>
+			</div>
+			<div class="intro-video">
+				<iframe style="display:block; margin:auto;" width="885" height="498" src="https://www.youtube.com/embed/AnaVI-IHZiU" title="24 Hours Inside A Michelin Star Kitchen: Restaurant Nouri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="welcome">
+				<h1 id="welcome-title">The Era of Cuisine and Quality Restaurant</h1>
+				<p id="welcome-para">Welcome to your one-stop haven for your cravings, special occasions, and common events. A place where we gather to bond with our friends and family you will surely remember. For more information of our foods and services, take a look in our navigation and footer. Enjoy our fine dining and Bon Appétit! </p>
+			</div>
+				<div class="phoneapp">
+			</div>
+		</div>
+
+<!--Content-->
+		<div class="item3">
+			<div class="flexbox-container">
+<!--Menu-->
+				<div class="flexbox1">
+<!--Menu-img-->
+					<div class="o1">
+						<div class="img-container1">
+							<img src="img/menu-intro.gif" alt="menu"/>
+						</div>
+					</div>
+<!--Menu-txt-->
+					<div class="o2">
+						<div class="txt-container1">
+							<div id="title1">Supercalifragilisticexpialidocious</div>
+							<div id="para1">One word you will need to say once you tried our special and world class dishes. We serve only what makes your day. A definite instagrammable worthy food that will impress your family and friends. For our menu, click the 'View Menu' link down below.</div>
+							<a id="menu-link" href="./menu/menu.html"><strong>View Menu</strong></a>	
+						</div>
+					</div>
+				</div>
+<!--Reservation-->
+				<div class="flexbox2">
+					<div class="o4">
+						<div class="txt-container2">
+							<div id="title2">Sophistication</div>
+							<div id="para2">Comfortable. Pleasant. Entertaining. If these are the feelings you want while eating, what are you waiting for? Dine in or book a reservation by clicking the link down below.</div>
+							<a id="reserve-link" href="./reservation/reservation.html"><strong>Book a Reservation</strong></a>
+						</div>
+					</div>
+					<div class="o3">
+						<div class="img-container2">
+							<img src="img/intro-place.gif" alt="Reservation"/>
+						</div>
+					</div>
+				</div>
+<!--About-->
+				<div class="flexbox3">
+					<div class="o5">
+						<h1 id="about-headline">About Us</h1>
+<!--Welcome--->
+						<div class="about-ctr">
+							<div class="about-img-ctr">
+								<img id="about-img" id="about-img2" src="./img/manager.png">
+							</div>
+							<div class="about-txt-ctr">
+								<h1 id="about-title">Our Story</h1>
+								<p id="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati a ullam placeat assumenda eius magni reiciendis incidunt illum eligendi, id temporibus, modi in perspiciatis sequi, voluptatibus cum. Corrupti eveniet soluta ullam sint iusto quam perferendis deleniti excepturi, qui ratione! Quo sequi, magni voluptatibus provident accusantium perferendis minima atque? Deleniti, provident amet tenetur natus culpa at nam iste consectetur. Iusto voluptate laudantium neque sequi itaque repudiandae quo, impedit veritatis odio accusamus. Distinctio blanditiis, soluta quo earum ipsam minus fugiat, minima possimus eveniet quidem, nemo veritatis iusto. Magnam temporibus nulla ea accusantium neque, pariatur perferendis, molestiae iure itaque, nobis saepe ad doloremque? </p>
+							</div>
+						</div>
+
+						<h1 id="feedback-headline">Popular Reviews</h1>
+						<div class="feedback-ctr">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./img/p2.png" alt="feedback1">
+								<h5 class="card-title">Ericka Worcestershire</h5>
+								<h6 class="card-subtitle mb-2 text-muted"></h6>
+								<div class="card-body">
+								<p class="card-text">Their food enjoys while it last! You heard it right from me 🙂 </p>
+								</div>
+							</div>
+							<div class="card" style="width: 18rem; display: inline-block;">
+								<img class="card-img-top" src="./img/p1.png" alt="feedback1">
+								<h5 class="card-title">Terry Dawson</h5>
+								<h6 class="card-subtitle mb-2 text-muted"></h6>
+								<div class="card-body">
+								<p class="card-text">There's nothing to compare with the food I tasted here</p>
+								</div>
+							</div>
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./img/p3.png" alt="feedback1">
+								<h5 class="card-title">Anne Sharapova</h5>
+								<h6 class="card-subtitle mb-2 text-muted"></h6>
+								<div class="card-body">
+								<p class="card-text">Delicious meal. Calm atmosphere. What could I wish for in a restaurant like this 🤩</p>
+								</div>
+							</div>
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./img/p4.jpg" alt="feedback1">
+								<h5 class="card-title">Sabrina Carpenter</h5>
+								<h6 class="card-subtitle mb-2 text-muted"></h6>
+								<div class="card-body">
+								<p class="card-text">A perfect place to shoot my next music video together with their amazing food I crave for.</p>
+								</div>
+							</div>
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./img/p5.jpg" alt="feedback1">
+								<h5 class="card-title">Nancy Jewel McDonie</h5>
+								<h6 class="card-subtitle mb-2 text-muted"></h6>
+								<div class="card-body">
+								<p class="card-text">
+									내 인생에서 시도한 최고의 레스토랑 중 하나</p>
+								</div>
+							</div>
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./img/p6.webp" alt="feedback1">
+								<h5 class="card-title">Chris Evans</h5>
+								<h6 class="card-subtitle mb-2 text-muted"></h6>
+								<div class="card-body">
+								<p class="card-text">Bon Appetit. It makes my day great everytime I pay a visit to their restaurant</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--Footer-->
+			<div class="item4">
+<!--Customer Support-->
+				<section class="customer">
+					<h4 id="customer-title">Our Brand</h4>
+					<ul>
+						<li class="customer-list"><a class="customer-txt" href="#about-headline">About Us</a></li>
+						<li class="customer-list"><a class="customer-txt" href="./customer support/customer support.html">Customer Support</a></li>
+						<li class="customer-list"><a class="customer-txt" href="./agreement/agreement.html">Customer Policy</a></li>
+						<li class="customer-list"><a class="customer-txt" href="./agreement/agreement.html">Terms and Condition</a></li>
+					</ul>
+				</section>
+<!--Menu-footer-->
+				<section class="menufoot">
+					<h3 id="menufoot-title">Our Brand</h3>
+					<ul>
+						<li class="menufoot-list"><a class="menufoot-txt" href="index.html">Home</a></li>
+						<li class="menufoot-list"><a class="menufoot-txt" href="./menu/menu.html">Menu</a></li>
+						<li class="menufoot-list"><a class="menufoot-txt" href="./reservation/reservation.html">Reservation</a></li>
+						<li class="menufoot-list"><a class="menufoot-txt" href="#about-headline">About</a></li>
+					</ul>
+				</section>
+<!--Logo footer-->
+				<section class="logofoot">
+					<img id="logofoot-img" src="img/The Cuisine Era-modified.png">
+				</section>
+<!--Social-->
+				<section class="social">
+					<h4 id="social-title">Keep in touch with us!</h4>
+					<table>
+						<tr>
+							<td><img class="social-img" src="img/facebook.png" alt="Facebook" style="border-radius: 50px;"></td>
+							<td><a class="social-txt" href="https://www.facebook.com/The-Cuisine-Era-101098829361909" target="_blank">Facebook</a></td>
+						</tr>
+						<tr>
+							<td><img class="social-img" src="img/instagram.png" alt="Instagram"></td>
+							<td><a class="social-txt" href="https://www.instagram.com" target="_blank">Instagram</a></td>
+						</tr>
+						<tr>
+							<td><img class="social-img" src="img/twitter.png" alt="Twitter"></td>
+							<td><a class="social-txt" href="https://www.twitter.com" target="_blank">Twitter</a></td>
+						</tr>
+						<tr>
+							<td><img class="social-img" src="img/youtube.png" alt="Youtube" style="width: 40px;"></td>
+							<td><a class="social-txt" href="https://www.youtube.com" target="_blank">Youtube</a></td>
+						</tr>
+					</table>
+				</section>
+<!--Contacts-->
+				<section class="contacts">
+					<h4 id="contacts-title">Contact Information</h4>
+					<ul>
+						<li class="contacts-list">Email:<br><a class="contacts-txt" href="mailto:legaspimarknixon@thecuisine-era.com">legaspimarknixon@thecuisine-era.com</a></li>
+						<li class="contacts-list">Phone:<br><a class="contacts-txt" href="tel:(+639)0927368348">(+639)0927368348</a></li>
+					</ul>
+				</section>
+			</div>
+<!--Copyright-->
+			<p id="copyright">&#169; 2022 The Cuisine Era by Mark Nixon Legaspi. All Rights Reserved.</p>
+<!--Close grid container-->
+		</div>
+
+	</body>
+</html>

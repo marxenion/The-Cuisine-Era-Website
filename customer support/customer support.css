@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ibarra+Real+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+/*--Navigation--*/
+#nav-logo{
+    width: 70px; 
+	height: 70px;
+}
+.nav-link {
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+}
+/*--Breadcrumb--*/
+#breadcrumb-link {
+    text-decoration: none;
+}
+ol.breadcrumb{
+    padding: 5px 100px;
+}
+/*--Reservation--*/
+.rsve-form{
+    background-position: center;
+    background: blanchedalmond;
+    width: 75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tccp{
+    text-decoration: none;
+}
+.tccp:hover{
+    text-decoration: underline;
+}
+
+/*--Footer--*/
+.item4{
+    max-height: 100%;
+    bottom:0;
+    width:100%;
+    padding: 50px 50px 25px 50px;
+    height:auto;   
+    background-color: orangered;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*--Customer Support--*/
+.customer{
+    width: 100%;
+}
+#customer-title{
+        font-family: 'Assistant', sans-serif;
+        font-weight: 500;
+        color: white;
+        padding: 10px;
+}
+.customer-list{
+    color: white;
+    list-style-type: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    padding: 5px;
+}
+.customer-txt{
+    text-decoration: none;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+}
+.customer-txt:hover {
+    color: cornsilk;
+}
+/*--Menu-footer--*/
+.menufoot{
+    width: 100%;
+}
+#menufoot-title{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    visibility: hidden;
+}
+.menufoot-list{
+    color: white;
+    list-style-type: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    padding: 5px;
+}
+.menufoot-txt{
+    text-decoration: none;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+}
+.menufoot-txt:hover {
+    color: cornsilk;
+}
+/*--Logofoot--*/
+.logofoot{
+    padding-top: 25px;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-bottom: 25px;
+}
+#logofoot-img{
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    margin: auto;
+    animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/*--Social--*/
+.social{
+    width: 100%;
+}
+#social-title{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+}
+img.social-img{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+.social-txt{
+    text-decoration: none;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+}
+.social-txt:hover {
+    color: cornsilk;
+}
+
+/*--Contacts--*/
+.contacts{
+    width: 100%;
+}
+#contacts-title{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+}
+.contacts-list{
+    color: white;
+    list-style-type: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.contacts-txt{
+    text-decoration: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.contacts-txt:hover {
+    color: cornsilk
+}
+/*--Copyright--*/
+#copyright{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+/*--Responsiveness--*/
+@media (min-width: 745px) {
+	/*--Footer--*/
+	.item4{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	#customer-title, #menufoot-title, #social-title, #contacts-title{
+		margin: auto;
+		padding: 10px;
+		display: block;
+		text-align:center;
+	}
+	.customer-txt, .menufoot-txt, .social-txt, .contacts-list, .contacts-txt {
+		margin: auto;
+		padding: 10px;
+		display: block;
+		text-align:center;
+	}
+	.logofoot, #logofoot-img{
+		display: none;
+	}
+	table{
+		margin: auto;
+	}
+    
+}
+
+@media (min-width: 1000px) {
+    .item4{
+        max-height: 100%;
+        bottom:0;
+        width:100%;
+        padding: 50px 50px 25px 50px;
+        height:auto;   
+        background-color: orangered;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*--Customer Support--*/
+    .customer{
+        width: 100%;
+    }
+    #customer-title{
+            font-family: 'Assistant', sans-serif;
+            font-weight: 500;
+            color: white;
+            padding: 10px;
+    }
+    .customer-list{
+        color: white;
+        list-style-type: none;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        padding: 5px;
+    }
+    .customer-txt{
+        text-decoration: none;
+        color: white;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        list-style-type: none;
+    }
+    .customer-txt:hover {
+        color: cornsilk;
+    }
+    /*--Menu-footer--*/
+    .menufoot{
+        width: 100%;
+    }
+    #menufoot-title{
+        font-family: 'Assistant', sans-serif;
+        font-weight: 500;
+        color: white;
+        padding: 10px;
+        visibility: hidden;
+    }
+    .menufoot-list{
+        color: white;
+        list-style-type: none;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        padding: 5px;
+    }
+    .menufoot-txt{
+        text-decoration: none;
+        color: white;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        list-style-type: none;
+    }
+    .menufoot-txt:hover {
+        color: cornsilk;
+    }
+    /*--Logofoot--*/
+    .logofoot{
+        padding-top: 25px;
+        padding-right: 90px;
+        padding-left: 90px;
+        padding-bottom: 25px;
+    }
+    #logofoot-img{
+        width: 150px;
+        height: 150px;
+        vertical-align: middle;
+        margin: auto;
+        animation: rotation 10s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    /*--Social--*/
+    .social{
+        width: 100%;
+    }
+    #social-title{
+        font-family: 'Assistant', sans-serif;
+        font-weight: 500;
+        color: white;
+        padding: 10px;
+    }
+    img.social-img{
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+    }
+    .social-txt{
+        text-decoration: none;
+        color: white;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+    }
+    .social-txt:hover {
+        color: cornsilk;
+    }
+    table{
+        padding-left: 50px;
+    }
+    /*--Contacts--*/
+    .contacts{
+        width: 100%;
+    }
+    #contacts-title{
+        font-family: 'Assistant', sans-serif;
+        font-weight: 500;
+        color: white;
+        padding: 10px;
+    }
+    .contacts-list{
+        color: white;
+        list-style-type: none;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .contacts-txt{
+        text-decoration: none;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        color: white;
+    }
+    .contacts-txt:hover {
+        color: cornsilk
+    }
+    /*--Copyright--*/
+    #copyright{
+        font-family: 'Assistant', sans-serif;
+        font-weight: 500;
+        color: white;
+        background-color: orangered;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+}
